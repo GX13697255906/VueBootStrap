@@ -1,11 +1,16 @@
 <template>
   <div class="login">
 
-    <div class="card-title"><h2>商户登录</h2></div>
+    <div class="card-title text-center">商户登录</div>
 
     <div class="div_username">
       <div class="row">
-        <div class="input_username col-12">
+
+        <div class="col-2">
+          <div class="glyphicon glyphicon-user"></div>
+        </div>
+
+        <div class="input_username col-10">
           <input id="username" name="username" type="text" placeholder="请输入用户名" class="form-control"/>
         </div>
       </div>
@@ -13,7 +18,10 @@
 
     <div class="div_password">
       <div class="row">
-        <div class="input_password col-12">
+        <div class="col-2">
+          <div class="glyphicon glyphicon-lock"></div>
+        </div>
+        <div class="input_password col-10">
           <input id="password" name="password" type="password" placeholder="请输入密码" class="form-control"/>
         </div>
       </div>
@@ -21,7 +29,10 @@
 
     <div class="div_code">
       <div class="row">
-        <div class="input_code col-7">
+        <div class="col-2">
+          <div class="glyphicon glyphicon-check"></div>
+        </div>
+        <div class="input_code col-5">
           <input id="code" name="code" type="text" placeholder="验证码" class="form-control"/>
         </div>
         <div class="input_setcode col-5">
@@ -52,38 +63,63 @@ export default {
   .login{
     width: 95%;
     line-height: 1.5rem;
-    margin: 30px auto;
+    margin: 50px auto;
   }
   .card-title{
-    padding-top: 20px;
+    font-size: 20px;
+    font-family: 宋体;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    width:6rem;
+    height:6rem;
+    line-height: 6rem;
+    vertical-align:middle;
+    font-weight:bold;
+    border-radius: 50%;
+    background-color: #ffffff;
   }
   .div_username,.div_password,.div_code,input{
-    border-top: #FFFFFF 0px solid;
-    border-left: #FFFFFF 0px solid;
-    border-right: #FFFFFF 0px solid;
-    border-bottom-color: #000000;
+    /*border-top: #000000 0px solid;*/
+    /*border-left: #000000 0px solid;*/
+    /*border-right: #000000 0px solid;*/
+    /*border-bottom-color: #000000;*/
   }
   .div_username,.div_password,.div_code,.div_btn{
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
   input{
-    text-align: center;
-    background-color: #D6D8DB;
+    border: 0rem;
+    text-align: left;
+    background-color: #ffffff;
   }
   input:focus {
-    background-color: #D6D8DB;
+    /*background-color: #D6D8DB;*/
     outline: none;
     box-shadow:none;  /*去除点击后的阴影*/
-    border-bottom: #000000 1px solid;
+    /*border-bottom: #000000 1px solid;*/
+  }
+  .glyphicon{
+    top: 0.6rem;
+  }
+  .col-2{
+    vertical-align: bottom;
+    background-color: #7f7f7f;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
   }
   .col-5{
     padding-left: 0rem;
-    padding-right: 0rem;
+    padding-right: 15px;
   }
-  .col-7{
-    padding-right: 0rem;
+  .col-10{
+    padding-left: 0rem;
   }
+  .col-12{
+    padding-left: 0rem;
+  }
+
   .form-control{
     width: 100%;
     border-radius: 0rem;
@@ -105,11 +141,16 @@ export default {
     border-left: 0px;
     box-shadow:none;  /*去除点击后的阴影*/
     padding-bottom: 0rem;
+    /*padding-right: 0px;*/
     border-bottom: 0rem;
   }
   #code{
+    text-align: center;
     border-radius: 0rem;
     border-right: 0px;
     box-shadow:none;  /*去除点击后的阴影*/
+  }
+  .input_code{
+    padding-right: 0rem;
   }
 </style>
