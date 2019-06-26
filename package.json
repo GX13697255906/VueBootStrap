@@ -16,8 +16,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "laydate": "^1.0.7",
+    "layui-laydate": "^5.0.9",
+    "layui-layer": "^1.0.9",
     "popper.js": "^1.15.0",
     "vue": "^2.5.2",
+    "vue-layer": "^0.9.13",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

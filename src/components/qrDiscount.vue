@@ -2,7 +2,7 @@
   <div class="discount">
 
     <div>
-      <h2 class="park">停车场名称</h2>
+      <h2 class="park">二维码打折</h2>
     </div>
     <br/>
 
@@ -23,8 +23,10 @@
       </div>
 
       <div class="row disnumber">
-        <div class="col-6 ri">剩余打折次数:</div>
-        <div class="col-6"><span class="dno">10</span><span>次</span></div>
+        <div class="col-6 ri"><button class="btn btn-success">更新有效期</button> </div>
+        <div class="col-6">
+          <input type="text" id="test" class="date" @click="selTime()" placeholder="选择时间"/>
+        </div>
       </div>
 
     </div>
@@ -53,18 +55,19 @@
 </template>
 
 <script>
+
   export default {
-    name: 'discount',
-    // mounted(){
-    //   layer.tab({
-    //     area: ['70%', '300px'],
-    //     tab: [{
-    //       title: '请选择打折方式',
-    //       content: "123"
-    //     }]
-    //   });
-    // },
+    name: 'qrDiscount',
+    mounted(){
+
+    },
     methods: {
+      selTime: function(){
+        laydate.render({
+          elem: '#test'
+          ,type: 'datetime'
+        });
+      },
       discountSel: function () {
         layer.open({
           title: '打折方式',
@@ -82,8 +85,6 @@
             "<div style='width:50%;display: inline-table;'>六折</div>" +
             "<div style='width:50%;display: inline-table;'>五折</div>" +
             "</div>"
-
-
         });
       }
     }
@@ -165,5 +166,11 @@
 
   .btn-success {
     background-color: #6097ff;
+  }
+  .date{
+    border-radius: .5rem;
+    text-align: center;
+    outline: none;
+    width: 80%;
   }
 </style>

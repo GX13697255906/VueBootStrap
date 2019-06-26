@@ -10,10 +10,13 @@
 
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link to="login" class="nav-link">login</router-link>
+              <router-link to="login" class="nav-link">登录</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="discount" class="nav-link">discount</router-link>
+              <router-link to="discount" class="nav-link">打折</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="qrDiscount" class="nav-link">二维码打折</router-link>
             </li>
           </ul>
 

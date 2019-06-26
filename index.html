@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="./static/layer.css">
+<script src="./static/layui-laydate/dist/laydate.js"></script>
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,11 +13,17 @@
     <!-- built files will be auto injected -->
   </body>
 <style scoped>
+  html{
+    height: 100%;
+    overflow: auto;
+  }
   body{
     background-color: #D6D8DB;
     margin-left: auto;
     margin-right: auto;
-    border: #000000 0px solid;/*测试边框*/
+    margin-bottom: auto;
+    border: #000000 0.5px solid;/*测试边框*/
+    min-height: 100%;
   }
   @media screen and (max-width: 320px){
     body{
@@ -24,7 +32,7 @@
   }
   @media screen and (min-width: 320px) and (max-width: 540px){
     body{
-      width: 95%;
+      width: 100%;
     }
   }
   @media screen and (min-width: 540px) and (max-width: 768px){

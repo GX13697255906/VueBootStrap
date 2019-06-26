@@ -5,9 +5,12 @@ import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-// import $ from 'jQuery'
+import $ from 'jquery'
+import layer from 'layui-layer'
+import laydate from  'layui-laydate'
 
-Vue.config.productionTip = false
+
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({
