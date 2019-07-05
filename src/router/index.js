@@ -4,6 +4,8 @@ import begin from '@/components/begin'
 import login from '@/components/login'
 import discount from '@/components/discount'
 import qrDiscount from '@/components/qrDiscount'
+import record from '@/components/record'
+import timeOutRecord from '@/components/timeOutRecord'
 
 
 Vue.use(Router)
@@ -29,6 +31,16 @@ export default new Router({
           path: 'qrDiscount',
           name: 'qrDiscount',
           component: qrDiscount
+        },
+        {
+          path: 'record',
+          name: 'record',
+          component: record
+        },
+        {
+          path: 'timeOutRecord',
+          name: 'timeOutRecord',
+          component: timeOutRecord
         }
       ]
     }

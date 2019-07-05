@@ -30,22 +30,24 @@
       </div>
 
     </div>
+    <br />
+
+    <div class="col-12 qr_img">
+      <img src="../../static/img/05.png"/>
+    </div>
+    <div class="qr_time">
+      <span class="stime"><span id="starttime">2019-04-05 03:00:38</span> - <span id="endtime">2019-04-05 03:10:38</span></span>
+    </div>
 
     <div class="dis_btn">
 
       <div class="row merchant">
         <div class="col-5">
-          <button class="btn btn-success dis_pre">二维码打折</button>
+          <button class="btn btn-success dis_pre">返回</button>
         </div>
         <div class="col-2"></div>
         <div class="col-5">
-          <button class="btn btn-success dis_plate">车牌打折</button>
-        </div>
-      </div>
-
-      <div class="row discprog">
-        <div class="col-12">
-          <button class="btn btn-success searchSet">查询/设置</button>
+          <button class="btn btn-success dis_plate">重置</button>
         </div>
       </div>
 

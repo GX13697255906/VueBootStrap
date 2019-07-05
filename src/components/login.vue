@@ -111,10 +111,15 @@ export default {
   }
   .col-5{
     padding-left: 0rem;
-    padding-right: 15px;
+    padding-right: 0px;
   }
   .col-10{
     padding-left: 0rem;
+    padding-right: 0rem ;
+  }
+  .col-10 input{
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
   }
   .col-12{
     padding-left: 0rem;
@@ -138,6 +143,8 @@ export default {
     background: -webkit-linear-gradient(left, #b3b5b8, #d3d5d7, #edeff1, #FFFFFF);
     border-bottom-left-radius: 0rem;
     border-top-left-radius: 0rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
     border-left: 0px;
     box-shadow:none;  /*去除点击后的阴影*/
     padding-bottom: 0rem;

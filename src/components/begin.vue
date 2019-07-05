@@ -18,6 +18,12 @@
             <li class="nav-item">
               <router-link to="qrDiscount" class="nav-link">二维码打折</router-link>
             </li>
+            <li class="nav-item">
+              <router-link to="record" class="nav-link">停车记录</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="timeoutrecord" class="nav-link">停车记录(超时)</router-link>
+            </li>
           </ul>
 
         </div>
